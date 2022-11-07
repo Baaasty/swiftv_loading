@@ -1,0 +1,50 @@
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Loading Screen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="particles-js">
+    <div class="btext">
+        <h1>Swift-V Roleplay</h1>
+        <p>Drücke die Spacebar um die Musik zu stoppen</p>
+        <a href="https://discord.gg/GDSUmVawCw" class="btn">Swift-V Discord</a>
+    </div>
+</div>
+<div class="textcopy">Made by &copy; Efe05#1509 & Baaasty#1804</div>
+
+<audio id="leson" src="music/music.mp3"></audio>
+<script>
+
+    let play = true;
+    const myAudio = document.getElementById("leson");
+
+    myAudio.volume = 0.5;
+    myAudio.play();
+
+    function onKeyDown(event) {
+        switch (event.keyCode) {
+            case 32: //SpaceBar
+                if (play) {
+                    myAudio.pause();
+                    play = false;
+                } else {
+                    myAudio.play();
+                    play = true;
+                }
+                break;
+        }
+        return false;
+    }
+
+    window.addEventListener("keydown", onKeyDown, false);
+</script>
+
+<script type="text/javascript" src="particles.js"></script>
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
