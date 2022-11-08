@@ -18,7 +18,7 @@ h1 {
 }
 
 p {
-    animation: rgb 0.5s linear infinite alternate;
+    animation: rgb 1.5s ease-in infinite alternate;
 }
 
 .btn {
@@ -51,13 +51,11 @@ p {
     0% {
         color: #eaeaea
     }
-    50% {
-        color: #6b7dcc
-    }
     100% {
-        color: #eaeaea
+        color: transparent;
     }
 }
+
 
 #particles-js {
     background-image: url("image.png");

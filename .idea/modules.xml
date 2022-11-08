@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/baby_loading.iml" filepath="$PROJECT_DIR$/.idea/baby_loading.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/swiftv_loading.iml" filepath="$PROJECT_DIR$/.idea/swiftv_loading.iml" />
     </modules>
   </component>
 </project>
